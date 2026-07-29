@@ -33,7 +33,7 @@ The receiving station can be equipped with its own vacuum source to keep the fly
 # Requirements
 
 |Requirement ID|Requirement Name|Description|Notes|
-|---|---|---|---|---|
+|---|---|---|---|
 |FLYMAX-TOOL-001|Vacuum Function|The picker tool shall pick up a fly using vacuum.||
 |FLYMAX-TOOL-002|Ejector Pulse Function|The picker tool shall enable fly release via a puff of air (ejector pulse).||
 |FLYMAX-TOOL-003|Quick Engagement Function|The tool shall be pickable-uppable by the robot using only linear motions.|One axis at a time.|
