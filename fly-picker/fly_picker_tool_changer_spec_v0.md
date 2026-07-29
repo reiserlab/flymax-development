@@ -58,7 +58,7 @@ The receiving station can be equipped with its own vacuum source to keep the fly
 The image below shows an initial concept of a tool design. This can and should be modified, or completely redone as needed.
 
 Tool Cross Section:
-![[Pasted image 20260729160138.png]]
+![FlyMAX tool concept](./FlyMAX Tool Changer Concept.png)
 
 Tool Attached to Robot:
-![[Pasted image 20260729160721.png]]
+![Tool attached to the robot](./FlyMAX Tool Changer on Robot.png)
