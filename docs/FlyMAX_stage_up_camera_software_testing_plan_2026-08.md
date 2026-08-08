@@ -1,8 +1,8 @@
-# FlyMAX vision software: Atlas10 bring-up and tracking-module testing plan
+# FlyMAX stage-up camera software: Atlas10 bring-up and tracking-module testing plan
 
-**Draft 2026-08-08 — for review.** Companion to the [FlyMAX camera, lens, and filter proposal](FlyMAX_camera_and_lens_plan_2026-07-31.md). Linear: **ROB-21** (atlas-bench pipeline bring-up, Phases 0–3), **ROB-16** (follow mode, Phases 3–4), **ROB-13** (target mode, Phase 5), **ROB-22** (pickability pilot, Phase 6), **ROB-12** (camera order + optical acceptance).
+**Draft 2026-08-08 — for review.** Companion to the [FlyMAX camera, lens, and filter proposal](FlyMAX_camera_and_lens_plan_2026-07-31.md). Linear: **ROB-21** (atlas-bench pipeline bring-up, Phases 0–3), **ROB-16** (follow mode, Phases 3–4), **ROB-13** (target mode, Phase 5), **ROB-22** (pickability pilot, Phase 6), **ROB-12** (camera receipt + acceptance).
 
-**Scope:** the software side of the picking-platform vision system — bringing up the new LUCID Atlas10 cameras on the new Windows workstation, benchmarking the acquisition → GPU processing path, and building/testing the two tracking modes needed for the robot-picking demos. Optical acceptance (FOV, MTF, vignetting, 850 nm contrast) is covered by the camera plan and ROB-12; this document covers everything from the sensor interface to the data the robot consumes.
+**Scope — one camera path, not all of FlyMAX vision.** This plan covers only the **upward-looking stage camera** on the picking platform (`stage_up_detail` / `stage_up_fast`, the new LUCID Atlas10s): bringing them up on the new Windows workstation, benchmarking the acquisition → GPU processing path, and building/testing the two tracking modes needed for the robot-picking demos. It does **not** cover the other FlyMAX vision components — `head_down` robot-head targeting, the `behavior_ball` / `behavior_fly` rig cameras, or `inspection_color` — which will need their own software plans. Optical acceptance (FOV, MTF, vignetting, 850 nm contrast) is covered by the camera plan and ROB-12; this document covers everything from the sensor interface to the data the robot consumes.
 
 ---
 
