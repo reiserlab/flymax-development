@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">FlyMAX picking platform top-view concept</title>
+  <desc id="desc">Dimensioned top view showing a 90 millimeter square carrier, 60 millimeter retainer and copper ring, 50 millimeter window, 45 millimeter active picking circle, and two opposed thermoelectric modules.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#344054"/>
+    </marker>
+    <style>
+      .title { font: 700 34px Arial, sans-serif; fill: #16202a; }
+      .subtitle { font: 20px Arial, sans-serif; fill: #475467; }
+      .label { font: 20px Arial, sans-serif; fill: #16202a; }
+      .small { font: 17px Arial, sans-serif; fill: #475467; }
+      .dim { stroke: #344054; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .guide { stroke: #98a2b3; stroke-width: 1.5; stroke-dasharray: 8 8; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="900" fill="#f7f9fc"/>
+  <text x="70" y="65" class="title">FlyMAX picking platform — top-view transfer concept</text>
+  <text x="70" y="100" class="subtitle">Nominal dimensions in millimeters; mounting holes and datums intentionally left for the live assembly</text>
+
+  <!-- 90 x 90 carrier, scaled 7 px/mm -->
+  <rect x="130" y="155" width="630" height="630" rx="8" fill="#3f4854" stroke="#202832" stroke-width="4"/>
+  <text x="155" y="190" class="label" style="fill:#ffffff">90 × 90 carrier</text>
+
+  <!-- concentric platform elements -->
+  <circle cx="445" cy="470" r="210" fill="#c8701c" stroke="#82420d" stroke-width="4"/>
+  <circle cx="445" cy="470" r="175" fill="#b9e3f5" stroke="#3386a9" stroke-width="4"/>
+  <circle cx="445" cy="470" r="157.5" fill="#d9f0e6" fill-opacity="0.8" stroke="#16856b" stroke-width="4" stroke-dasharray="12 9"/>
+  <circle cx="445" cy="470" r="188" fill="none" stroke="#111827" stroke-width="22"/>
+
+  <!-- TEC envelopes, below ring -->
+  <rect x="410" y="220" width="70" height="70" fill="#d0d5dd" stroke="#475467" stroke-width="3" stroke-dasharray="8 6"/>
+  <rect x="410" y="650" width="70" height="70" fill="#d0d5dd" stroke="#475467" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="790" y="235" class="label">Two opposed 10 × 10 × 3 TEM/TEC modules</text>
+  <line x1="790" y1="245" x2="485" y2="255" class="guide"/>
+  <line x1="790" y1="250" x2="485" y2="685" class="guide"/>
+
+  <!-- callouts -->
+  <text x="805" y="335" class="label">Physical fly barrier</text>
+  <text x="805" y="364" class="small">Ø45 inside × Ø60 outside × 4 high</text>
+  <text x="805" y="392" class="small">continuous wall; no side opening in v1</text>
+  <line x1="795" y1="350" x2="621" y2="350" class="guide"/>
+
+  <text x="805" y="475" class="label">Ø50 transparent optical window</text>
+  <line x1="795" y1="482" x2="620" y2="482" class="guide"/>
+
+  <text x="805" y="570" class="label">Ø45 active picking circle</text>
+  <text x="805" y="599" class="small">keep reachable from above and visible from below</text>
+  <line x1="795" y1="575" x2="590" y2="575" class="guide"/>
+
+  <text x="805" y="675" class="label">Copper ring under window edge</text>
+  <text x="805" y="704" class="small">Ø60 outside × Ø45 inside × 3 thick</text>
+  <line x1="795" y1="680" x2="625" y2="635" class="guide"/>
+
+  <!-- dimensions -->
+  <line x1="130" y1="825" x2="760" y2="825" class="dim"/>
+  <line x1="130" y1="790" x2="130" y2="845" class="guide"/>
+  <line x1="760" y1="790" x2="760" y2="845" class="guide"/>
+  <text x="397" y="860" class="label">90 carrier</text>
+
+  <line x1="235" y1="130" x2="655" y2="130" class="dim"/>
+  <text x="395" y="120" class="small">60 ring</text>
+
+  <line x1="287.5" y1="470" x2="602.5" y2="470" class="dim"/>
+  <text x="400" y="455" class="small">45 active</text>
+
+  <text x="805" y="805" class="small">Top view is not a fabrication drawing.</text>
+  <text x="805" y="832" class="small">Confirm real mounting holes, robot reach, camera cone,</text>
+  <text x="805" y="859" class="small">and cooling-stack orientation in the live assembly.</text>
+</svg>

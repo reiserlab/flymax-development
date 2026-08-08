@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">FlyMAX picking platform thermal section and controller concept</title>
+  <desc id="desc">Section through the transparent window, physical fly wall, copper cold ring, two thermoelectric modules, downward heatsinks, temperature sensors, and Oven Industries controller wired to the modules in series.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#344054"/>
+    </marker>
+    <marker id="heat" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#d92d20"/>
+    </marker>
+    <style>
+      .title { font: 700 34px Arial, sans-serif; fill: #16202a; }
+      .subtitle { font: 20px Arial, sans-serif; fill: #475467; }
+      .label { font: 20px Arial, sans-serif; fill: #16202a; }
+      .small { font: 17px Arial, sans-serif; fill: #475467; }
+      .tiny { font: 15px Arial, sans-serif; fill: #475467; }
+      .dim { stroke: #344054; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .guide { stroke: #98a2b3; stroke-width: 1.5; stroke-dasharray: 8 8; }
+      .wire { fill: none; stroke: #175cd3; stroke-width: 5; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="900" fill="#f7f9fc"/>
+  <text x="65" y="65" class="title">FlyMAX picking platform — thermal section and control concept</text>
+  <text x="65" y="100" class="subtitle">Both TEM/TEC stacks point downward; top remains open for flies, picker, and illumination</text>
+
+  <!-- section, not to scale -->
+  <text x="80" y="155" class="label">Section through opposed cooling modules</text>
+
+  <!-- carrier -->
+  <rect x="110" y="395" width="710" height="70" fill="#3f4854" stroke="#202832" stroke-width="3"/>
+  <text x="400" y="440" class="label" style="fill:#ffffff">90 × 90 × 8 carrier</text>
+
+  <!-- copper ring sections -->
+  <rect x="180" y="350" width="170" height="45" fill="#c8701c" stroke="#82420d" stroke-width="3"/>
+  <rect x="580" y="350" width="170" height="45" fill="#c8701c" stroke="#82420d" stroke-width="3"/>
+  <text x="378" y="382" class="small">copper ring, 3 thick</text>
+
+  <!-- window -->
+  <rect x="295" y="315" width="340" height="35" fill="#b9e3f5" stroke="#3386a9" stroke-width="3"/>
+  <text x="380" y="305" class="small">Ø50 transparent window</text>
+
+  <!-- physical barrier -->
+  <path d="M 280 315 L 280 235 L 325 235 L 325 315" fill="#111827" stroke="#111827" stroke-width="3"/>
+  <path d="M 605 315 L 605 235 L 650 235 L 650 315" fill="#111827" stroke="#111827" stroke-width="3"/>
+  <line x1="280" y1="215" x2="650" y2="215" class="dim"/>
+  <text x="393" y="200" class="small">Ø45 active opening</text>
+  <text x="695" y="252" class="label">4 mm physical barrier</text>
+  <text x="695" y="280" class="small">PEEK or similar insulating retainer</text>
+  <line x1="685" y1="260" x2="646" y2="260" class="guide"/>
+
+  <!-- two TEC stacks -->
+  <rect x="215" y="465" width="100" height="55" fill="#d0d5dd" stroke="#475467" stroke-width="3"/>
+  <rect x="615" y="465" width="100" height="55" fill="#d0d5dd" stroke="#475467" stroke-width="3"/>
+  <text x="229" y="499" class="small">TEC A</text>
+  <text x="629" y="499" class="small">TEC B</text>
+
+  <rect x="205" y="520" width="120" height="45" fill="#98a2b3" stroke="#475467" stroke-width="3"/>
+  <rect x="605" y="520" width="120" height="45" fill="#98a2b3" stroke="#475467" stroke-width="3"/>
+  <text x="220" y="550" class="tiny">hot block</text>
+  <text x="620" y="550" class="tiny">hot block</text>
+
+  <!-- heat sinks -->
+  <g fill="#344054" stroke="#202832" stroke-width="2">
+    <rect x="195" y="565" width="140" height="40"/>
+    <rect x="205" y="605" width="15" height="105"/>
+    <rect x="235" y="605" width="15" height="105"/>
+    <rect x="265" y="605" width="15" height="105"/>
+    <rect x="295" y="605" width="15" height="105"/>
+    <rect x="595" y="565" width="140" height="40"/>
+    <rect x="605" y="605" width="15" height="105"/>
+    <rect x="635" y="605" width="15" height="105"/>
+    <rect x="665" y="605" width="15" height="105"/>
+    <rect x="695" y="605" width="15" height="105"/>
+  </g>
+  <text x="200" y="745" class="small">downward heatsink</text>
+  <text x="600" y="745" class="small">downward heatsink</text>
+
+  <!-- heat flow arrows -->
+  <line x1="265" y1="545" x2="265" y2="680" stroke="#d92d20" stroke-width="5" marker-end="url(#heat)"/>
+  <line x1="665" y1="545" x2="665" y2="680" stroke="#d92d20" stroke-width="5" marker-end="url(#heat)"/>
+
+  <!-- sensors -->
+  <circle cx="370" cy="372" r="12" fill="#fdb022" stroke="#b54708" stroke-width="3"/>
+  <circle cx="560" cy="372" r="12" fill="#fdb022" stroke="#b54708" stroke-width="3"/>
+  <text x="360" y="795" class="small">control sensor near window</text>
+  <line x1="450" y1="775" x2="370" y2="390" class="guide"/>
+  <text x="515" y="823" class="small">optional opposite-side monitor</text>
+  <line x1="640" y1="802" x2="560" y2="390" class="guide"/>
+
+  <!-- controller and series wiring -->
+  <rect x="930" y="220" width="370" height="170" rx="18" fill="#eaf2ff" stroke="#175cd3" stroke-width="4"/>
+  <text x="985" y="270" class="label">Oven Industries 5R6-900</text>
+  <text x="990" y="310" class="small">one PID controller</text>
+  <text x="990" y="340" class="small">initial target: 15–17 °C</text>
+  <text x="990" y="370" class="small">setpoint ≥ dew point + 2 °C</text>
+
+  <text x="975" y="455" class="label">Series connection</text>
+  <text x="915" y="490" class="small">LOAD+ → TEC B → TEC A → LOAD−</text>
+
+  <text x="910" y="585" class="label">Critical packaging checks</text>
+  <text x="910" y="625" class="small">• clear camera ray path below Ø45 aperture</text>
+  <text x="910" y="660" class="small">• controlled spring compression on ceramic modules</text>
+  <text x="910" y="695" class="small">• fan exhaust does not warm the platform or disturb flies</text>
+  <text x="910" y="730" class="small">• removable window/retainer for cleaning</text>
+
+  <text x="65" y="865" class="small">Concept section only — final interfaces, tolerances, fasteners, and heatsinks require Isabel's layout in the live FlyMAX assembly.</text>
+</svg>
